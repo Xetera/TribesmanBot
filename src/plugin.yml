@@ -1,4 +1,9 @@
-name: Big_Boys
+name: Tribesman
 version: 0.1.0
 author: Xetera
 main: main.kotlin.net.xetera.Application
+
+commands:
+  random:
+    description: Generates a random number within a range, default 100
+    usage: /random [range]
