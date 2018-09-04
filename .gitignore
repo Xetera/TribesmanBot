@@ -6,3 +6,5 @@
 target/
 
 *.bat
+
+src/main/kotlin/Config\.kt
