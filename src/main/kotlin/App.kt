@@ -1,6 +1,6 @@
 package main.kotlin
 
-import main.kotlin.socket.SocketHandler
+import main.kotlin.socket.ConnectionHandler
 import me.aberrantfox.kjdautils.api.startBot
 
 fun main(args: Array<String>) {
@@ -9,6 +9,6 @@ fun main(args: Array<String>) {
         val prefix = "="
         registerCommands(commandPath, prefix)
     }
-    SocketHandler.poll()
+    ConnectionHandler.poll()
 }
 

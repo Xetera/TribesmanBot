@@ -1,5 +1,6 @@
 package main.kotlin.commands
 
+import main.kotlin.socket.ConnectionHandler
 import me.aberrantfox.kjdautils.api.dsl.CommandSet
 import me.aberrantfox.kjdautils.api.dsl.commands
 
@@ -13,7 +14,12 @@ fun pingCommand() = commands {
     command("send") {
         execute {
             it.respond("I tried sending something")
-            // SocketClient.send()
+
+        }
+    }
+    command("connected") {
+        execute {
+            it.respond("Currently serving ${ConnectionHandler.count} Minecraft servers.")
         }
     }
 }
